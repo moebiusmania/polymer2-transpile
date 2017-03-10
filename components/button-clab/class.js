@@ -1,9 +1,9 @@
 'use strict';
 
 
-import {Polymer} from "./../polymer-element";
+import {Polymer, PolymerElement} from "./../polymer-element";
 
-class ButtonClab extends Polymer.Element {
+class ButtonClab extends PolymerElement {
   static get is() { return 'button-clab' }
   static get properties() {
     return {

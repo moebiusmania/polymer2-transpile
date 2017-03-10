@@ -4,3 +4,4 @@
 
 // Exports Polymer global object as module
 export const Polymer = window.Polymer;
+export const PolymerElement = window.Polymer.Element;

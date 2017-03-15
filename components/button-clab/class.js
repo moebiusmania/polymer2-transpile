@@ -1,6 +1,5 @@
 'use strict';
 
-
 import {Polymer} from "./../polymer-element";
 
 class ButtonClab extends Polymer.Element {

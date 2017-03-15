@@ -4,7 +4,7 @@
   "description": "Test transpiling Polymer 2 to ES5 with Babel",
   "main": "index.js",
   "scripts": {
-    "start": "http-server & webpack -w"
+    "start": "http-server -s -p 8081 & webpack -w"
   },
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "babel-loader": "^6.4.0",
     "babel-preset-es2015": "^6.22.0",
     "http-server": "^0.9.0",
-    "wc-loader": "^1.1.1"
+    "wc-loader": "^1.1.3",
+    "webpack-notifier": "^1.5.0"
   }
 }

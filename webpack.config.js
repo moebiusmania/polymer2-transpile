@@ -1,4 +1,5 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
   entry: [
@@ -17,6 +18,12 @@ module.exports = {
   //   path: './',
   //   filename: '[name].bundle.js',
   // },
+  plugins: [
+		new WebpackNotifierPlugin({
+			title: 'Polymer 2 [transpile]',
+			alwaysNotify: true
+		})
+  ],
   devtool: 'source-map',
   module: {
     loaders: [{

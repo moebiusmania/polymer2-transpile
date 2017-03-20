@@ -73,6 +73,8 @@
 "use strict";
 
 
+// import './../bower_components/webcomponentsjs/webcomponents-hi-sd-ce.js';
+
 __webpack_require__(3);
 
 __webpack_require__(1);
@@ -282,7 +284,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
   /******/__webpack_require__.p = "";
   /******/
   /******/ // Load entry module and return exports
-  /******/return __webpack_require__(__webpack_require__.s = 14);
+  /******/return __webpack_require__(__webpack_require__.s = 12);
   /******/
 })(
 /************************************************************************/
@@ -710,13 +712,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   __webpack_require__(2);
 
-  __webpack_require__(12);
+  __webpack_require__(11);
 
   __webpack_require__(3);
 
-  __webpack_require__(6);
+  __webpack_require__(5);
 
-  __webpack_require__(8);
+  __webpack_require__(7);
 
   (function () {
     'use strict';
@@ -1460,6 +1462,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
      * instance counts.
      *
      * @namespace
+     * @summary Provides basic tracking of element definitions (registrations) and
+     * instance counts.
      */
     Polymer.telemetry = {
       /**
@@ -1531,9 +1535,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
   })();
 
   /***/
-},,
+},
 /* 5 */
-/* 6 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -1718,7 +1721,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 },
-/* 7 */
+/* 6 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -1757,7 +1760,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   __webpack_require__(2);
 
-  __webpack_require__(10);
+  __webpack_require__(9);
 
   (function () {
 
@@ -2300,7 +2303,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 },
-/* 8 */
+/* 7 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -2337,13 +2340,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   __webpack_require__(1);
 
-  __webpack_require__(11);
+  __webpack_require__(10);
 
   __webpack_require__(2);
 
-  __webpack_require__(7);
+  __webpack_require__(6);
 
-  __webpack_require__(9);
+  __webpack_require__(8);
 
   (function () {
 
@@ -4650,7 +4653,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 },
-/* 9 */
+/* 8 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -5227,7 +5230,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 },
-/* 10 */
+/* 9 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -5457,7 +5460,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 },
-/* 11 */
+/* 10 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -5749,7 +5752,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 },
-/* 12 */
+/* 11 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -5919,9 +5922,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
   })();
 
   /***/
-},,
-/* 13 */
-/* 14 */
+},
+/* 12 */
 /***/function (module, exports, __webpack_require__) {
 
   /*__wc__loader*/
@@ -5979,7 +5981,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
   /***/
 }]);
-//# sourceMappingURL=polymer.bundle.js.map
+//# sourceMappingURL=polymer-element.js.map
 
 /***/ }),
 /* 4 */

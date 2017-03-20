@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <title>Polymer 2 - ES5 tranpsile</title>
 
-  <script src="./bower_components/webcomponentsjs/webcomponents-hi-ce-es5.js"></script>
+  <!-- <script src="./bower_components/es6-promise-polyfill/promise.js"></script> -->
+  <script src="./bower_components/webcomponentsjs/webcomponents-es5-loader.js"></script>
   <link rel="import" href="./components/button-clab/button-clab.html">
-  <script src="./bundle.js"></script>
+  <!-- <script src="./bundle.js"></script> -->
 
 </head>
 <body>
 
   <button-clab>test</button-clab>
 
+  <script>
+    window.addEventListener('WebComponentsReady', function(){
+      console.log('ok');
+      var script = document.createElement('script');
+      script.src = "./bundle.js";
+      document.body.appendChild(script);
+    });
+  </script>
 </body>
 </html>

@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "^2.0.0-rc.3"
+    "polymer": "^2.0.0-rc.3",
+    "es6-promise": "^4.0.5",
+    "es6-promise-polyfill": "^1.2.0"
   }
 }

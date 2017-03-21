@@ -1,8 +1,11 @@
 <!-- <link rel="import" href="./../../bower_components/polymer/polymer-element.html"> -->
+<link rel="import" href="style-module.html">
 
 <dom-module id="button-clab">
 	<template>
-		<button class$="[[_computeClass(type, appearance, size, block)]]"
+		<style include='button-style'></style>
+
+		<button class="Button"
 			disabled="[[disabled]]" on-click="_click" type="[[buttonType]]">
 				<template is="dom-if" if="[[icon]]">
 					<i class$="[[_computeIconClass(icon)]]"></i>

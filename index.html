@@ -6,13 +6,29 @@
 
   <!-- <script src="./bower_components/es6-promise-polyfill/promise.js"></script> -->
   <script src="./bower_components/webcomponentsjs/webcomponents-es5-loader.js"></script>
-  <link rel="import" href="./components/button-clab/button-clab.html">
+  <!-- <link rel="import" href="./components/button-clab/button-clab.html"> -->
   <!-- <script src="./bundle.js"></script> -->
+  <style>
+    :root {
+      --primary-color: #0072BC;
+      --secondary-color: #5C6970;
+      --base-space: 8px;
+    }
 
+    .Alone {
+      margin-top: 100px;
+    }
+  </style>
 </head>
 <body>
 
-  <button-clab>test</button-clab>
+  <button-clab>Button A</button-clab>
+  <button-clab size="small">Button B</button-clab>
+  <button-clab>Button C</button-clab>
+
+  <div class="Alone">
+    <button-clab block>I'm a little different button</button-clab>
+  </div>
 
   <script>
     window.addEventListener('WebComponentsReady', function(){

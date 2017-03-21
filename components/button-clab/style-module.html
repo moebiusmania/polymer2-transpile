@@ -1,0 +1,80 @@
+<dom-module id='button-style'>
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+
+
+      :host + :host {
+        margin-left: calc( var(--base-space, 8px) * 3 );
+      }
+
+
+      /* This doesn't work anymore? */
+      :host-context(.Alone) {
+        display: none;
+      }
+
+      .Button {
+        position: relative;
+        background-color: var(--primary-color, #0072BC);
+        color: #FFF;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        outline: none;
+        user-select: none;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 0;
+        padding:
+          calc( var(--base-space, 8px) * 2 )
+          calc( var(--base-space, 8px) * 3 );
+      }
+
+
+      .Button::before {
+        content: "";
+        position: absolute;
+        background-color: var(--secondary-color, #5C6970);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(100%);
+        transition: all 200ms;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+
+      .Button:hover::before {
+        transform: none;
+      }
+
+
+      .Button:active {
+        transform: translateY(1px);
+      }
+
+
+      :host[size="small"] .Button {
+        font-size: 10px;
+        letter-spacing: initial;
+        padding:
+          var(--base-space, 8px)
+          calc( var(--base-space, 8px) * 2 );
+      }
+
+      :host[block] {
+        display: block;
+      }
+
+      :host[block] .Button {
+        width: 100%;
+      }
+    </style>
+  </template>
+</dom-module>

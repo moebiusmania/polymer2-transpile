@@ -74,8 +74,7 @@
 
 
 // import './../bower_components/webcomponentsjs/webcomponents-hi-sd-ce.js';
-
-__webpack_require__(3);
+// import './../polymer.bundle.js';
 
 __webpack_require__(1);
 
@@ -86,9 +85,9 @@ __webpack_require__(1);
 "use strict";
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+// import "./button-clab.html";
 
-__webpack_require__(5);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _polymerElement = __webpack_require__(2);
 
@@ -108,29 +107,29 @@ var ButtonClab = function (_Polymer$Element) {
   }
 
   _createClass(ButtonClab, [{
-    key: "_click",
+    key: '_click',
     value: function _click(evt) {
       this.dispatchEvent(new CustomEvent('btnclick'), { bubbles: true });
     }
   }, {
-    key: "_computeClass",
+    key: '_computeClass',
     value: function _computeClass(type, appearance, size, block) {
       var arr = ['btn', type, appearance, size];
       block ? arr.push('block') : null;
       return arr.join(' ');
     }
   }, {
-    key: "_computeIconClass",
+    key: '_computeIconClass',
     value: function _computeIconClass(icon) {
       return ['icon', icon].join(' ');
     }
   }], [{
-    key: "is",
+    key: 'is',
     get: function get() {
       return 'button-clab';
     }
   }, {
-    key: "properties",
+    key: 'properties',
     get: function get() {
       return {
         type: {
@@ -182,11 +181,14 @@ customElements.define(ButtonClab.is, ButtonClab);
 
 // import './../bower_components/polymer/polymer-element.html';
 
-// Exports Polymer global object as module
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Polymer = undefined;
+
+__webpack_require__(3);
+
+// Exports Polymer global object as module
 var Polymer = exports.Polymer = window.Polymer;
 
 /***/ }),
@@ -5991,29 +5993,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 module.exports = __webpack_require__(0);
 
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*__wc__loader*/!function (a) {
-  var b = "<dom-module id=\"button-clab\">\n\t<template>\n\t\t<style include=\"button-style\"></style>\n\n\t\t<button class=\"Button\" disabled=\"[[disabled]]\" on-click=\"_click\" type=\"[[buttonType]]\">\n\t\t\t\t<template is=\"dom-if\" if=\"[[icon]]\">\n\t\t\t\t\t<i class$=\"[[_computeIconClass(icon)]]\"></i>\n\t\t\t\t</template>\n\t\t\t\t<slot></slot>\n\t\t</button>\n\t</template>\n\n</dom-module>\n";if (a.body) {
-    var c = a.body,
-        d = a.createElement("div");for (d.innerHTML = b; d.children.length > 0;) c.appendChild(d.children[0]);
-  } else a.write(b);
-}(document);
-__webpack_require__(6);
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-/*__wc__loader*/!function (a) {
-  var b = "<dom-module id=\"button-style\">\n  <template>\n    <style>:host{display:inline-block;}:host + :host{margin-left:calc( var(--base-space,8px) * 3 );}/* This doesn't work anymore? */ :host-context(.Alone){display:none;}.Button{position:relative;background-color:var(--primary-color,#0072BC);color:#FFF;border:none;text-transform:uppercase;font-weight:bold;letter-spacing:1.2px;outline:none;user-select:none;overflow:hidden;cursor:pointer;z-index:0;padding:calc( var(--base-space,8px) * 2 ) calc( var(--base-space,8px) * 3 );}.Button::before{content:\"\";position:absolute;background-color:var(--secondary-color,#5C6970);top:0;bottom:0;left:0;right:0;transform:translateY(100%);transition:all 200ms;pointer-events:none;z-index:-1;}.Button:hover::before{transform:none;}.Button:active{transform:translateY(1px);}:host[size=\"small\"] .Button{font-size:10px;letter-spacing:initial;padding:var(--base-space,8px) calc( var(--base-space,8px) * 2 );}:host[block]{display:block;}:host[block] .Button{width:100%;}</style>\n  </template>\n</dom-module>\n";if (a.body) {
-    var c = a.body,
-        d = a.createElement("div");for (d.innerHTML = b; d.children.length > 0;) c.appendChild(d.children[0]);
-  } else a.write(b);
-}(document);
 
 /***/ })
 /******/ ]);

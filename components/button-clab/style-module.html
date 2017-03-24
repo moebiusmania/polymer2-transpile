@@ -60,7 +60,7 @@
       }
 
 
-      :host[size="small"] .Button {
+      :host([size="small"]) .Button {
         font-size: 10px;
         letter-spacing: initial;
         padding:
@@ -68,11 +68,11 @@
           calc( var(--base-space, 8px) * 2 );
       }
 
-      :host[block] {
+      :host([block]) {
         display: block;
       }
 
-      :host[block] .Button {
+      :host([block]) .Button {
         width: 100%;
       }
     </style>
